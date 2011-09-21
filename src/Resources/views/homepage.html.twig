@@ -10,7 +10,7 @@
         <p>{{ project.description_html|raw }}</p>
         <p><a href="{{ path('project_show', { "id": project.id }) }}#comments">
         {% if project.comments == 0 %}
-            No comments
+            No comment
         {% elseif project.comments == 1 %}
             1 comment so far
         {% else %}
